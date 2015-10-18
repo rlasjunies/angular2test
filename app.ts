@@ -1,22 +1,10 @@
 /// <reference path='./typings/angular2/angular2.d.ts' />
+/// <reference path='./typings/es6-shim/es6-shim.d.ts' />
 
-import {Component, View, bootstrap} from 'angular2/angular2';
-
-@Component(
-	{
-		selector: 'my-app'
-	}
-)
-@View({
-	template:"<H1>Hello {{name}}</H1>"
+import {Component, bootstrap} from 'angular2/angular2';
+@Component({
+	selector: 'my-app',
+	template: '<h1>My First Angular 2 App</h1>'
 })
-
-class MyAppController{
-	name:string;
-	constructor(){
-		this.name = "Alice";
-	}
-}
-
-bootstrap(MyAppController);
-
+class AppComponent { }
+bootstrap(AppComponent);

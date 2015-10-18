@@ -1,6 +1,12 @@
 {
 	"compilerOptions": {
+		"target": "ES5",
 		"module": "system",
-		"experimentalDecorators": true
-	}
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+		"watch": true
+	},
+	"exclude": [
+		"./node_modules", "*.js"
+	]
 }
